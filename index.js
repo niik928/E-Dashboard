@@ -1,11 +1,7 @@
 
 const express = require ('express');
-
+require('./db/config');
 const app = express();
 
-app.get("/",(req,resp)=>{
-    resp.send("app is working...")
 
-});
-
-app.listen(5000)
+app.listen(5000);
